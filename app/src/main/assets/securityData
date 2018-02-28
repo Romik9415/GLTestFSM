@@ -1,0 +1,86 @@
+[
+  {
+    "action": "lock",
+    "states": [
+      {
+        "start": "AlarmDisarmedAllUnlocked",
+        "end": "AlarmDisarmedAllLocked"
+      },
+      {
+        "start": "AlarmDisarmedDriverUnlocked",
+        "end": "AlarmDisarmedAllLocked"
+      },
+      {
+        "start": "AlarmDisarmedAllLocked",
+        "end": "AlarmDisarmedAllLocked"
+      },
+      {
+        "start": "AlarmArmedAllLocked",
+        "end": "AlarmArmedAllLocked"
+      }
+    ]
+  },
+  {
+    "action": "lockX2",
+    "states": [
+      {
+        "start": "AlarmDisarmedAllUnlocked",
+        "end": "AlarmArmedAllLocked"
+      },
+      {
+        "start": "AlarmDisarmedDriverUnlocked",
+        "end": "AlarmArmedAllLocked"
+      },
+      {
+        "start": "AlarmDisarmedAllLocked",
+        "end": "AlarmArmedAllLocked"
+      },
+      {
+        "start": "AlarmArmedAllLocked",
+        "end": "AlarmArmedAllLocked"
+      }
+    ]
+  },
+  {
+    "action": "unlock",
+    "states": [
+      {
+        "start": "AlarmDisarmedAllUnlocked",
+        "end": "AlarmDisarmedAllUnlocked"
+      },
+      {
+        "start": "AlarmDisarmedDriverUnlocked",
+        "end": "AlarmDisarmedDriverUnlocked"
+      },
+      {
+        "start": "AlarmDisarmedAllLocked",
+        "end": "AlarmDisarmedDriverUnlocked"
+      },
+      {
+        "start": "AlarmArmedAllLocked",
+        "end": "AlarmDisarmedDriverUnlocked"
+      }
+    ]
+  },
+  {
+    "action": "unlockX2",
+    "states": [
+      {
+        "start": "AlarmDisarmedAllUnlocked",
+        "end": "AlarmDisarmedAllUnlocked"
+      },
+      {
+        "start": "AlarmDisarmedDriverUnlocked",
+        "end": "AlarmDisarmedDriverUnlocked"
+      },
+      {
+        "start": "AlarmDisarmedAllLocked",
+        "end": "AlarmDisarmedAllUnlocked"
+      },
+      {
+        "start": "AlarmArmedAllLocked",
+        "end": "AlarmDisarmedAllUnlocked"
+      }
+    ]
+  }
+]

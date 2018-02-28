@@ -21,6 +21,13 @@ android {
         }
     }
 }
+ext {
+    supportVersion = '26.1.0'
+    rxVersion = '2.1.0'
+    playServices = '11.8.0'
+    aac = "1.0.0-rc1"
+    daggerVersion = '2.13'
+}
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -30,4 +37,6 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    compile 'com.google.code.gson:gson:2.8.2'
 }

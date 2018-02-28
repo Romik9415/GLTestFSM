@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">GLTestFSM</string>
-    <string name="lock">LOCK</string>
-    <string name="unlock">UNLOCK</string>
-    <string name="lock_x2">LOCKx2</string>
-    <string name="unlock_x2">UNLOCKx2</string>
+    <string name="lock">lock</string>
+    <string name="unlock">unlock</string>
+    <string name="lock_x2">lockX2</string>
+    <string name="unlock_x2">unlockX2</string>
 </resources>
