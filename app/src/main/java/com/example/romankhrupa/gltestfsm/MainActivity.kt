@@ -3,6 +3,7 @@ package com.example.romankhrupa.gltestfsm
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.content.ContextCompat
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -21,6 +22,10 @@ class MainActivity : AppCompatActivity() {
                 iAlertBulb.setColorFilter(ContextCompat.getColor(this, R.color.red))
             }
         })
+
+        iAlertBulb.setOnClickListener {
+            Toast.makeText(this, "Alert Bulb",Toast.LENGTH_SHORT).show()
+        }
 
         button_lock.setOnClickListener({
             ss.updateState(it.tag.toString())
