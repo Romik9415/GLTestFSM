@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val ss = SecuritySystem(baseContext,{
+        val securitySystem = SecuritySystem(baseContext,{
             newState->
             tAlertDescription.text = newState.value
             if(newState== State.AlarmArmedAllLocked){
@@ -28,16 +28,16 @@ class MainActivity : AppCompatActivity() {
         }
 
         button_lock.setOnClickListener({
-            ss.updateState(it.tag.toString())
+            securitySystem.updateState(it.tag.toString())
         })
         button_unlock.setOnClickListener({
-            ss.updateState(it.tag.toString())
+            securitySystem.updateState(it.tag.toString())
         })
         button_lock_x2.setOnClickListener({
-            ss.updateState(it.tag.toString())
+            securitySystem.updateState(it.tag.toString())
         })
         button_unlock_x2.setOnClickListener({
-            ss.updateState(it.tag.toString())
+            securitySystem.updateState(it.tag.toString())
         })
     }
 
